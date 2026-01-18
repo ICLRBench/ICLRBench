@@ -27,11 +27,37 @@ Our work distinguishes itself through the following key contributions:
     <img src="./asset/workflow.png" width="100%" height="100%">
 </p>
 
-## 📊 
+## 📊 PaperDecision-Bench
+<strong>PaperDecision-Bench</strong> is a dynamic and continually extending evaluation framework explicitly aligned with the evolving ICLR peer review process, rather than a static dataset. By grounding evaluation in future decision prediction and cross-year extension, the benchmark is inherently resistant to benchmark-specific overfitting and better reflects real-world conference usage scenarios.
+
+To balance accessibility and realism, PaperDecision-Bench adopts a three-tier evaluation design:
+
+* [<strong>B1: Future Prediction.</strong>](https://huggingface.co/datasets/simon123905/ICLR/tree/main/ICLR_2026_Metainfo)
+Targets ICLR 2026 decision prediction, where models observe papers and reviews while final outcomes remain hidden, serving as a gold-standard test of cross-temporal generalization.
+
+* [<strong>B2: Retrospective.</strong>](https://huggingface.co/datasets/simon123905/ICLR/tree/main/ICLR_2023-2025)
+Covers complete ICLR 2023–2025 data for robust retrospective evaluation, enabling reliable model comparison and systematic error analysis.
+
+* [<strong>B3: MiniSet-1K.</strong>](https://huggingface.co/datasets/simon123905/ICLR/tree/main/Miniset-1K)
+Provides a cost-efficient benchmark focusing on MLLM, 3D, and RL papers with ambiguous decision boundaries, supporting rapid iteration and analysis.
+
+All data in PaperDecision-Bench are sourced from [OpenReview](https://openreview.net/), and the benchmark will be continuously updated as new conference rounds are released.
+
+<p align="center">
+    <img src="./asset/benchmark.png" width="100%" height="100%">
+</p>
 
 ## :black_nib: Citation
 
 If you find our work helpful for your research, please consider citing our work.   
 
 ```bibtex
+@misc{ICLRBench2026,
+  author       = {ICLRBench Contributors},
+  title        = {ICLR 2026 Acceptance Prediction: Benchmarking Decision Process with a Multi-Agent System},
+  howpublished = {\url{https://github.com/ICLRBench/ICLRBench}},
+  year         = {2026},
+  note         = {Accessed: 2026-01-18}
+}
+
 ```
