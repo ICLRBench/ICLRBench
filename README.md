@@ -21,7 +21,7 @@ Our work distinguishes itself through the following key contributions:
 * *Empirical insights.* We achieve up to <strong>~82% accuracy</strong> in accept–reject prediction with frontier multimodal LLMs and identify key factors influencing acceptance outcomes, such as reviewer expertise and score changes.
 
 <p align="center">
-    <img src="./asset/teaser.jpg" width="100%" height="100%">
+    <img src="./asset/teaser.png" width="100%" height="100%">
 </p>
 
 ## 🤖 PaperDecision-Agent
